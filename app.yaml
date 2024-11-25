@@ -1,0 +1,16 @@
+runtime: python39
+
+handlers:
+# Untuk file CSS
+- url: /style.css
+  static_files: style.css
+  upload: style.css
+
+# Untuk folder assets
+- url: /assets
+  static_dir: assets
+
+# Untuk file HTML utama
+- url: /.*
+  static_files: index.html
+  upload: index.html
